@@ -6,5 +6,10 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
+  data: {
+    eventHub: new Vue()
+  },
   render: h => h(App)
 }).$mount('#app')
+
+router.push('/goods')
